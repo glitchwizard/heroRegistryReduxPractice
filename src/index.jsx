@@ -12,7 +12,7 @@ function printStore(){
   console.log(store.getState());
 }
 
-store.subscribe (() => {
+store.subscribe(() => {
   console.log('store change\nfrom index.jsx\n', store.getState());
 });
 
