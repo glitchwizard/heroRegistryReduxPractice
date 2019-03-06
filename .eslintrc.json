@@ -6,7 +6,7 @@
         "jest": true
     },
     "extends": [
-        "eslint:recommended", 
+        "eslint:recommended",
         "plugin:react/recommended"
     ],
     "parserOptions": {
@@ -26,6 +26,6 @@
         "linebreak-style": [ "error", "unix" ],
         "quotes": [ "error", "single" ],
         "semi": [ "error", "always" ],
-        "no-console": "warn"
+        "no-console": "off"
     }
 }
