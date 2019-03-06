@@ -11,3 +11,6 @@ export const addNewHero = (name, powers) => ({
   }
 });
 
+export const logCurrentReduxState = () => ({
+  type: types.LOG_CURRENT_STATE
+});

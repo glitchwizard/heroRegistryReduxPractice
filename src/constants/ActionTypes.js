@@ -1,1 +1,2 @@
 export const ADD_NEW_HERO = 'ADD_NEW_HERO';
+export const LOG_CURRENT_STATE = 'LOG_CURRENT_STATE';
