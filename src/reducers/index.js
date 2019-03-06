@@ -4,7 +4,7 @@ import logCurrentReduxStateReducer from './logCurrentReduxStateReducer';
 
 const rootReducer = combineReducers({
   heroRegistry: heroRegistryReducer,
-  logCurrentReduxState: logCurrentReduxStateReducer
+  dummySlice: logCurrentReduxStateReducer
 });
 
 export default rootReducer;

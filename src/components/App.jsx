@@ -26,7 +26,7 @@ class App extends React.Component {
     console.log('handleSubmit\n', this.state.name, '\n', this.state.powers);
     this.props.dispatch(actions.addNewHero(this.state.name, this.state.powers));
     console.log('this.props: ', this.props);
-    this.setState({name: null, powers: null});
+    this.setState({name: '', powers: ''});
   }
 
   handleLogCurrentReduxState(event){
@@ -48,6 +48,8 @@ class App extends React.Component {
             <button type='submit'>Submit</button>
           </div>
         </form>
+
+        <p />
         <div>this.props: {JSON.stringify(this.props)}</div>
         <p />
         <div>this.state:{JSON.stringify(this.state)}</div>
@@ -61,13 +63,14 @@ class App extends React.Component {
 
 App.propTypes = {
   dispatch: PropTypes.func,
-  heroes: PropTypes.object,
+  heroRegistry: PropTypes.object,
   reduxState: PropTypes.object
 };
 
-const mapStateToProps = (state) => {
-  console.log('mapStateToProps', state);
+const mapStateToProps = state => {
+  console.log('mapStateToProps.heroRegistry', state.heroRegistry);
   return {
+    heroRegistry: state.heroRegistry,
     reduxState: state
   };
 };
