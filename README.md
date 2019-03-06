@@ -1,6 +1,6 @@
 # React Application Configuration
 
-#### By **Phil Mass**
+#### By **Phil Mass & Charley McGowan**
 
 ## Description
 
@@ -156,7 +156,7 @@ module.exports = {
         "node": true
     },
     "extends": [
-        "eslint:recommended", 
+        "eslint:recommended",
         "plugin:react/recommended"
     ],
     "parserOptions": {
@@ -236,8 +236,6 @@ If you have any issues or questions, please email me at philrmass@gmail.com
 
 ## Legal
 
-Copyright (c) 2018 Phil Mass
+Copyright (c) 2018 Phil Mass & Charley McGowan
 
 This software is licensed under the MIT License
-
-
